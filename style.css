@@ -86,6 +86,7 @@ body {
     color: #505779;
     font-size: 24px;
   }
+
   .portfolio_link .fa:hover {
     color: #7f8cff;
   }
@@ -201,7 +202,6 @@ body {
     display: flex;
     padding: 12px;
     margin: 8px;
-    display: flex;
     align-items: center;
     gap: 16px;
     justify-content: flex-start;
@@ -377,8 +377,6 @@ body {
     flex-direction: column;
     background-color: white;
     border-top-right-radius: 64px;
-    display: flex;
-    flex-direction: row;
     gap: 24px;
     align-items: center;
     padding: 10%;
@@ -470,7 +468,6 @@ body {
     display: flex;
     padding: 12px;
     margin: 8px;
-    display: flex;
     align-items: center;
     gap: 16px;
     justify-content: flex-start;
