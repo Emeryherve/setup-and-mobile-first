@@ -18,9 +18,10 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  overflow: hidden;
+ 
   width: 100%;
   font-family: 'Poppins', sans-serif;
+  background-color: #F7F7F9;
 }
 
 #logo a {
@@ -39,6 +40,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 5%;
+    background-color: white;
   }
 
   .menu-items {
@@ -46,11 +48,13 @@ body {
   }
 
   .headline_section {
-    background-image: url('/images/header-shapes-mobile.svg');
+    background-image: url('./images/header-shapes-mobile.svg');
     display: flex;
     padding: 20% 5%;
     gap: 12px;
     flex-direction: column;
+    background-color: white;
+    border-bottom-left-radius: 64px;
   }
 
   .primary_text {
@@ -78,8 +82,163 @@ body {
     width: 170.167px;
     height: 20px;
   }
+
+  .portfolio_link .fa {
+    color: #505779;
+    font-size:24px;
+  }
+  .portfolio_link .fa:hover {
+    color: #7f8cff;
+  }
+  .portfolio_link {
+    display: flex;
+    flex-direction:row;
+    gap:16px;
+ 
+  }
+  .my_projects {
+    display: flex;
+    flex-direction: column;
+    gap:88px;
+    margin: 16px;
+  }
+  .project_card {
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    padding:16px;
+    background-color: white;
+    border:1px solid #DFE1E6;
+  border-radius: 16px;
+  }
+
+  .project_name {
+    color:  #172B4D;
+font-size: 32px;
+font-weight: 700;
+line-height: 44px;
+  }
+  .tags {
+    display: flex;
+    align-items: center;
+    gap:12px;
+  }
+  .circle {
+ width: 8px;
+height: 8px;
+background-color:#C1C7D0;
+border-radius: 50%;
 }
 
+.project_description {
+color: #344563 ;
+font-size: 15px;
+font-weight: 400;
+  } 
+
+.project_labels {
+  display: flex;
+    align-items: center;
+    gap:12px;
+}
+.project_labels .pill {
+  padding:4px 12px;
+  background-color: #EBEBFF;
+  border-radius: 8px;
+}
+.project_button button {
+  margin-top: 4px;
+    padding:12px;
+    border:1px solid #396DF2;
+    color:#396DF2;
+    background-color: transparent;
+    border-radius:8px;
+}
+  .aboutme_section {
+    display: flex;
+    padding: 20% 5%;
+    gap: 12px;
+    flex-direction: column;
+    background-color: white;
+    border-top-right-radius: 64px;
+  }
+  .accordion {
+    display: flex;
+  flex-direction: column;
+  }
+  .skill_list {
+     padding:  5%;
+    background-color: white;
+  }
+  .accordion_header {
+    padding:16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .accordion_item {
+    border-radius: 8px;
+    background-color: #F7F7F9;
+    display: flex;
+    padding:12px;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    gap:16px;
+    justify-content: flex-start;
+  }
+  .footer {
+        background-image: url('./images/contact-form-shapes-mobile.svg');
+    display: flex;
+    padding: 20% 5%;
+    gap: 12px;
+    flex-direction: column;
+    background-color: #6070FF;
+    border-top-left-radius: 64px;
+  }
+  .footer_content {
+    flex-direction: column;
+    display: flex;
+    gap:12px;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_content p{
+color:  #EBEBFF;
+font-size: 20px;
+font-weight: 400;
+line-height: 28px; 
+  }
+  .footer_content h3{
+color:  white;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+line-height: 52px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+  }
+  form .input_form {
+    background-color: white; 
+    border:none;
+    border-radius: 8px;
+    padding:16px 12px;
+  }
+  form textarea {
+   color:gray;
+  }
+    form  button{
+    margin-top: 4px;
+    padding:12px;
+    border:1px solid #396DF2;
+    color:#396DF2;
+    background-color: white;
+    border-radius:8px;
+    max-width: 120px;
+  }
+}
 /* For screens with 768px and below */
 
 @media (max-width: 767px) {
@@ -94,7 +253,7 @@ body {
   }
 
   .headline_section {
-    background-image: url('/images/header-shapes-mobile.svg');
+    background-image: url('./images/header-shapes-mobile.svg');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -153,7 +312,7 @@ body {
   }
 
   .headline_section {
-    background-image: url('/images/header-shapes-mobile.svg');
+    background-image: url('./images/header-shapes-mobile.svg');
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
